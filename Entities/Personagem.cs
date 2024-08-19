@@ -11,11 +11,11 @@ public abstract class Personagem
     public int Inteligencia { get; set; }
 
 
-    public void Atacar(){
+    public virtual void Atacar(Personagem alvo){
 
     }
     
-    public void Defender(){
+    public virtual void Defender(){
         
     }
 }

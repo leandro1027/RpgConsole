@@ -1,3 +1,5 @@
+namespace RpgConsole;
+
 public enum Raca
 {
     Humano,
