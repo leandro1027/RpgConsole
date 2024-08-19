@@ -1,0 +1,15 @@
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\bin\Debug\net8.0\RpgConsole.exe
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\bin\Debug\net8.0\RpgConsole.deps.json
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\bin\Debug\net8.0\RpgConsole.runtimeconfig.json
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\bin\Debug\net8.0\RpgConsole.dll
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\bin\Debug\net8.0\RpgConsole.pdb
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\RpgConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\RpgConsole.AssemblyInfoInputs.cache
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\RpgConsole.AssemblyInfo.cs
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\RpgConsole.csproj.CoreCompileInputs.cache
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\RpgConsole.sourcelink.json
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\RpgConsole.dll
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\refint\RpgConsole.dll
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\RpgConsole.pdb
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\RpgConsole.genruntimeconfig.cache
+C:\Users\administrator\Documents\leandro\c#\RpgConsole\obj\Debug\net8.0\ref\RpgConsole.dll
