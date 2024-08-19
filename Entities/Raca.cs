@@ -6,4 +6,4 @@ public enum Raca
     Elfo,
     Anao,
     Orc
-}
+};
