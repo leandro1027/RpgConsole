@@ -3,9 +3,9 @@ namespace RpgConsole;
 public class Humano : Personagem
 {
       public Humano(){
-        Forca = 10;
-        Agilidade = 10;
-        Inteligencia = 10;
+        Forca = 9;
+        Agilidade = 12;
+        Inteligencia = 13;
     }
 
      public override void Atacar(Personagem alvo)

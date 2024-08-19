@@ -4,9 +4,9 @@ public class Anao : Personagem
 {
     public Anao()
     {
-        Forca = 14;
+        Forca = 12;
         Agilidade = 8;
-        Inteligencia = 6;
+        Inteligencia = 10;
     }
 
     public override void Atacar(Personagem alvo)
