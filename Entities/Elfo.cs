@@ -1,6 +1,6 @@
 namespace RpgConsole;
 
-public class Elfo : Personagem
+public class Elfo : Personagem //Classe Elfo que herda da classe abstrata Personagem
 {
 
     public Elfo()
@@ -10,12 +10,12 @@ public class Elfo : Personagem
         Inteligencia = 14;
     }
 
-    public override void Atacar(Personagem alvo)
+    public override void Atacar(Personagem alvo) // Sobrescrita e implementação do método virtual herdado de Personagem
     {
         Console.WriteLine($"{Nome} ataca {alvo.Nome} com seu machado!");
     }
 
-    public override void Defender()
+    public override void Defender() // Sobrescrita e implementação do método virtual herdado de Personagem
     {
        Console.WriteLine($"{Nome} usa sua resistência para se defender");
     }

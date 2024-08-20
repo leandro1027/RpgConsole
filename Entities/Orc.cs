@@ -1,6 +1,6 @@
 namespace RpgConsole;
 
-public class Orc : Personagem
+public class Orc : Personagem //Classe Orc que herda da classe abstrata Personagem
 {
     public Orc()
     {
@@ -9,12 +9,12 @@ public class Orc : Personagem
         Inteligencia = 8;
     }
 
-    public override void Atacar(Personagem alvo)
+    public override void Atacar(Personagem alvo) // Sobrescrita e implementação do método virtual herdado de Personagem
     {
        Console.WriteLine($"{Nome} Atacou {alvo.Nome} com brutalidade!");
     }
 
-    public override void Defender()
+    public override void Defender() // Sobrescrita e implementação do método virtual herdado de Personagem
     {
         Console.WriteLine($"{Nome} defendeu os ataques inimigos");
     }

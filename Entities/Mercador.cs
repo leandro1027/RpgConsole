@@ -1,6 +1,6 @@
 namespace RpgConsole;
 
-public class Mercador() : Iprofissao
+public class Mercador : Iprofissao
 {
     public void Trabalhar()
     {
