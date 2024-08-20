@@ -1,9 +1,9 @@
 namespace RpgConsole;
 
 
-public class SistemaDeCombate
+public class SistemaDeCombate // Classe que gerencia o combate entre dois personagens
 {
-    public void Combater(Personagem p1, Personagem p2) 
+    public void Combater(Personagem p1, Personagem p2) // Método que inicia uma batalha
     {
         Console.WriteLine($"{p1.Nome} (Força: {p1.Forca}, Agilidade: {p1.Agilidade}) VS {p2.Nome} (Força: {p2.Forca}, Agilidade: {p2.Agilidade})");
 

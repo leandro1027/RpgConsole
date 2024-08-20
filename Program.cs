@@ -18,32 +18,32 @@ class Program
         sistemaDeCombate.Combater(personagem1, personagem2);
     }
 
-    static Personagem CriarPersonagem(GerenciadorDePersonagem gerenciador)
+    static Personagem CriarPersonagem(GerenciadorDePersonagem gerenciador) // Aqui é criado um um personagem com base na entrada de dados no menu
     {
         Console.Write("Digite o nome do personagem: ");
         string nome = Console.ReadLine();
 
-        Console.WriteLine("Escolha uma raça:");
+        Console.WriteLine("Escolha uma raça:"); // Menu para escolher uma raça
         foreach (var raca in Enum.GetValues(typeof(Raca)))
         {
             Console.WriteLine($"{(int)raca}. {raca}");
         }
         Raca racaEscolhida = (Raca)int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Escolha uma classe:");
+        Console.WriteLine("Escolha uma classe:"); // Menu para escolher uma classe
         foreach (var classe in Enum.GetValues(typeof(Classe)))
         {
             Console.WriteLine($"{(int)classe}. {classe}");
         }
         Classe classeEscolhida = (Classe)int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Escolha uma profissão:");
+        Console.WriteLine("Escolha uma profissão:"); // Menu para se esconlher uma profissão
         Console.WriteLine("1. Ferreiro");
         Console.WriteLine("2. Alquimista");
         Console.WriteLine("3. Mercador");
         int profissaoEscolhida = int.Parse(Console.ReadLine());
 
-        Iprofissao profissao = null;
+        Iprofissao profissao = null; // Instância a profissão escolhida
         switch (profissaoEscolhida)
         {
             case 1:
@@ -57,7 +57,7 @@ class Program
                 break;
         }
 
-        return gerenciador.CriarPersonagem(nome, racaEscolhida, classeEscolhida, profissao);
+        return gerenciador.CriarPersonagem(nome, racaEscolhida, classeEscolhida, profissao); // Retorna o personagem criado
     }
 }
 

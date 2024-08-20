@@ -2,7 +2,8 @@ namespace RpgConsole;
 
 public class Humano : Personagem // Classe Humano que herda da classe abstrata Personagem
 {
-      public Humano(){
+      public Humano() // Construtor da classe Humano, aqui defeni os atributos inciais do personagem
+      {
         Forca = 9;
         Agilidade = 12;
         Inteligencia = 13;

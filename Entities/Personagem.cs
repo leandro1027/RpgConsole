@@ -1,6 +1,6 @@
 namespace RpgConsole;
 
-public abstract class Personagem // Classe abstrata Personagem
+public abstract class Personagem // Classe abstrata Personagem que define os métodos e atributos comuns a todos os personagens
 {
     public string? Nome { get; set; }
     public Raca Raca { get; set; }

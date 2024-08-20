@@ -1,6 +1,6 @@
 namespace RpgConsole;
 
-public enum Classe
+public enum Classe // Enum pra definir as classes disponiveis
 {
     Guerreiro,
     Mago,

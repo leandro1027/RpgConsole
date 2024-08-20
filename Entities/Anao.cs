@@ -1,8 +1,8 @@
 namespace RpgConsole;
 
-public class Anao : Personagem //Classe Anao que herda da classe abstrata Personagem
+public class Anao : Personagem // Classe Anao que herda da classe abstrata Personagem
 {
-    public Anao()
+    public Anao() // Construtor da classe Anao com os atributos iniciais
     {
         Forca = 12;
         Agilidade = 8;

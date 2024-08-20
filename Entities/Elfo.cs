@@ -3,7 +3,7 @@ namespace RpgConsole;
 public class Elfo : Personagem //Classe Elfo que herda da classe abstrata Personagem
 {
 
-    public Elfo()
+    public Elfo() // Construtor da classe Elfo, é definido os atributos inciais ja aqui no construtor
     {
         Forca = 8;
         Agilidade = 12;

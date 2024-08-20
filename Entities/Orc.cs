@@ -2,7 +2,7 @@ namespace RpgConsole;
 
 public class Orc : Personagem //Classe Orc que herda da classe abstrata Personagem
 {
-    public Orc()
+    public Orc() // Construtor da classe Orc, com os atributos inciais ja definidos
     {
         Forca = 16;
         Agilidade = 7;
