@@ -1,12 +1,12 @@
 namespace RpgConsole;
 
-public interface Iprofissao
+public interface Iprofissao 
 {
-    public void Trabalhar(){
+    public void Trabalhar(){ //Método da Interface que será implementada nas classes que assinarem contrato com Iprofissao
 
     }
 
-    public void Descansar(){
+    public void Descansar(){ //Método da Interface que será implementada nas classes que assinarem contrato com Iprofissao
         
     }
 }

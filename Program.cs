@@ -1,22 +1,63 @@
 ﻿namespace RpgConsole;
 
+using System;
+
 class Program
 {
     static void Main(string[] args)
     {
-        var gerenciador = new GerenciadorDePersonagem();
+        GerenciadorDePersonagem gerenciador = new GerenciadorDePersonagem();
 
-        // Criação de personagens
-        var guerreiroHumano = gerenciador.CriarPersonagem("Aragorn", Raca.Humano, Classe.Guerreiro, new Ferreiro());
-        var magoElfo = gerenciador.CriarPersonagem("Legolas", Raca.Elfo, Classe.Mago, new Alquimista());
+        Console.WriteLine("Criação do Personagem 1");
+        Personagem personagem1 = CriarPersonagem(gerenciador);
 
-        // Exibição das profissões trabalhando
-        guerreiroHumano.Profissao.Trabalhar();
-        magoElfo.Profissao.Trabalhar();
+        Console.WriteLine("\nCriação do Personagem 2");
+        Personagem personagem2 = CriarPersonagem(gerenciador);
 
-        // Combate
-        var sistemaDeCombate = new SistemaDeCombate();
-        sistemaDeCombate.Combater(guerreiroHumano, magoElfo);
+        SistemaDeCombate sistemaDeCombate = new SistemaDeCombate();
+        sistemaDeCombate.Combater(personagem1, personagem2);
+    }
+
+    static Personagem CriarPersonagem(GerenciadorDePersonagem gerenciador)
+    {
+        Console.Write("Digite o nome do personagem: ");
+        string nome = Console.ReadLine();
+
+        Console.WriteLine("Escolha uma raça:");
+        foreach (var raca in Enum.GetValues(typeof(Raca)))
+        {
+            Console.WriteLine($"{(int)raca}. {raca}");
+        }
+        Raca racaEscolhida = (Raca)int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Escolha uma classe:");
+        foreach (var classe in Enum.GetValues(typeof(Classe)))
+        {
+            Console.WriteLine($"{(int)classe}. {classe}");
+        }
+        Classe classeEscolhida = (Classe)int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Escolha uma profissão:");
+        Console.WriteLine("1. Ferreiro");
+        Console.WriteLine("2. Alquimista");
+        Console.WriteLine("3. Mercador");
+        int profissaoEscolhida = int.Parse(Console.ReadLine());
+
+        Iprofissao profissao = null;
+        switch (profissaoEscolhida)
+        {
+            case 1:
+                profissao = new Ferreiro();
+                break;
+            case 2:
+                profissao = new Alquimista();
+                break;
+            case 3:
+                profissao = new Mercador();
+                break;
+        }
+
+        return gerenciador.CriarPersonagem(nome, racaEscolhida, classeEscolhida, profissao);
     }
 }
 
